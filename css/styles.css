@@ -599,7 +599,7 @@ background: #2E2F42;
     align-items: center;
 display: flex;
 justify-content: center;
-margin-left: auto;
+
     width: 100%;
     align-items: center;
     font-family: 'Roboto';
@@ -617,8 +617,8 @@ color: #FFFFFF;
     display: flex;
     gap: 16px;
     width:calc((100%-48)/3) ;
-    margin-right:  auto;
-    margin-left: auto;
+    
+    
     
 }
 .footer-soc-item {
