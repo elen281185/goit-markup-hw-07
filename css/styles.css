@@ -273,8 +273,10 @@ text-align: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
-    padding: 112px 54px;
+    
     margin: 0 auto;
+    padding-bottom: 112px;
+    padding-top: 56px;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -293,19 +295,19 @@ text-align: center;
 .hero-title {
 margin: 0 auto;
 margin-bottom: 72px;
+padding-top: 112px;
 max-width: 320px;
-left: 15px;
-top: 182px;
 
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
-font-size: 20px;
-line-height: 1.1;
+font-size: 29px;
+line-height: 1.11;
 text-align: center;
-letter-spacing: 0.02em;
+
 
 color: #FFFFFF;
+
 }
 
 .hero-btn {
@@ -325,7 +327,8 @@ color: #FFFFFF;
     border: none;
     border-radius: 4px;
     transition: background 250ms linear, color 250ms linear,border 250ms linear; 
-    }
+    
+}
 .hero-btn:hover,
 .hero-btn:focus {
     background: #404BBF;;
@@ -348,7 +351,7 @@ color: #FFFFFF;
 }
 
 .advantages-title {
-    margin-bottom: 8px;
+    
 }
 .advantages-list {
     width: 100%;
@@ -357,6 +360,7 @@ color: #FFFFFF;
     gap: 24px; 
 }
 .advantages-blok-icon{
+    display: none;
     width: 100%;
     opacity: 0;
     background: #F4F4FD;
@@ -374,27 +378,33 @@ width: 100%;
 
 }
 .advantages-caption {
- width: 100%;   
-font-weight: 500;
-font-size: 36px;
-line-height: 1.1;
-letter-spacing: 0.02em;
-color: var(--main-title-color);
-text-align: center;
-letter-spacing: 0.02em;
-text-transform: capitalize;
-margin-bottom: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+      
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+ 
+    color: var(--main-title-color);
+    margin-bottom: 8px;
 }
 
 
 .advantages-text {
-    width: 100%;
-font-size: 16px;
-line-height: 1.5;
+   width: 100%;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 1.5;
+line-height: 24px;
+
 letter-spacing: 0.02em;
-color: var(--main-text-color);
+
 min-height: 72px;
-padding-right: 16px;
+margin: 0 auto;
 }
 .work {
     display: none;
@@ -442,7 +452,7 @@ flex-wrap: wrap;
    flex-wrap: wrap;
     } 
 .command-title {
-    padding-top: 96px;
+    
     padding-left: 31px;
 font-weight: 700;
 font-size: 36px;
@@ -468,8 +478,11 @@ color: var(--main-title-color);
                 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     width: 100%;
-    margin-bottom: 72px;
+   
     
+}
+.command-item:not(:last-child){
+     margin-bottom: 72px;
 }
 .command-caption {
 font-weight: 500;
@@ -527,7 +540,7 @@ animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 3.0);
 }
 .customers {
     padding-top: 96px;
-    padding-bottom: 96px;
+    padding-bottom: 40px;
 }
 .customers-title {
     font-weight: 700;
@@ -547,6 +560,7 @@ animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 3.0);
 .customers-item {
     width: calc((100% - 16px)/ 2);
     height: 88px;
+    margin-bottom: 56px;
 }
 .customers-link {
     width: 100%;
@@ -584,7 +598,14 @@ background: #2E2F42;
     display: flex;
     flex-wrap: wrap;    
     justify-content: center;
+    flex-direction: column;
     
+}
+@media screen and (max-width: 479px)  {
+    .container-footer-general{
+       min-width: 300px;
+       max-width: 479;
+    }
 }
 .container-footer{
     
@@ -616,16 +637,15 @@ color: #FFFFFF;
 .footer-soc-list {
     display: flex;
     gap: 16px;
-    width:calc((100%-48)/3) ;
-    
-    
+     justify-content:center;
+       
     
 }
 .footer-soc-item {
    
 }
 .footer-soc-link {
-
+    
     width: 40px;
     height: 40px;
     background: rgba(255, 255, 255, 0.1);
@@ -695,6 +715,8 @@ margin-bottom: 72px;
 }
 .footer-form{
     
+}
+@media screen and (max-width: 479px)  {
 
 }
 .subscribe-form{
@@ -1144,12 +1166,30 @@ letter-spacing: 0.04em;
        }
 
     .hero-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
         font-size: 36px;
+        line-height: 1.11;
+        
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        
+        color: #FFFFFF;
+        
+
+        
         width: 320px;
         height: 80px;
         left: 54px;
         top: 182px;
+       padding-bottom: 72px;
+
     }  
+    .hero-btn{
+       
+    }
     .advantages-item {
         max-width: 396;
         }
@@ -1261,9 +1301,10 @@ letter-spacing: 0.04em;
             }
 
     .container{
-        max-width: 736px;
+        max-width: 100%;
              }
              .hero{
+                padding-bottom: 108px;
                 background-image:linear-gradient(
                     rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
@@ -1279,21 +1320,44 @@ letter-spacing: 0.04em;
                     url(../images/people-office-desktop-2x.jpg);
                   }
             }
+    .container-hero{
+       
+    } 
+    .tablet  {
+        margin-bottom: 40px;
+    }   
     .hero-title {
-        width: 700px;
-                font-size: 56px;
-                line-height: 1.07;
-                max-width: 496px;
-                height: 120px;
-                left: 136px;
-                top: 181px;
-                margin-bottom: 40px;
+        height: auto;
+        min-width: 496;
+        max-width: 700px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+       letter-spacing: 0.02em;
+
+        color: #FFFFFF;
+
+        width: 496px;
+        padding-bottom: 0;
             }  
+    .hero-btn{
+        margin-top: 40px;
+        
+    }
      .container.container-mini{
-        max-width: 552px;    
-    }        
+        padding-top: 0;
+        max-width: 700px;    
+    } 
+    .advantages{
+        padding-bottom: 48px;
+        margin-bottom: 0;
+    } 
     .advantages-item {
              width:calc((100% - 24px) / 2);
+             margin-bottom: 48px;
         }
     .advantages-caption{
         text-align: left;
@@ -1311,13 +1375,24 @@ letter-spacing: 0.04em;
 
     }
     .command-list {
+        min-width: 552px;
         width: 100%;
         display: flex;
-        gap: 24px;
-            
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+        justify-content: space-between;
+        
     }
     .command-item{
-        width: calc((100%-24px) / 2);
+        width: calc((100% - 24px) / 2);
+        margin-bottom: 64px;
+        row-gap: 24px;
+        column-gap: 24px;
+        margin: 0 0 24px;
+    }
+    .command-item:last-child{
+        margin-bottom: 72px;
     }
         .customers-item {
             width: calc((100% - 48px)/3);
@@ -1331,7 +1406,24 @@ letter-spacing: 0.04em;
        width: calc((100% - 24px)/ 2); 
             }
     }
+   
+ .foter-tablet{
 
+    display: flex;
+    gap: 24px;
+    flex-wrap: nowrap;
+    justify-content:center;
+    width: calc((100% - 24px) / 2);
+
+ }
+ .container-footer{
+       max-width: 264px;
+      
+    }
+    .container-footer-soc{
+        max-width: 264px;
+        
+    }
     /*******************************************************************************
 ********************************************************************************
 ************************DESKTOP**************************************************
@@ -1407,7 +1499,12 @@ letter-spacing: 0.04em;
     .hero-title {
                  max-width: 496px;
                  margin-bottom: 48px;
+                 padding-top: 0;
             }  
+    .hero{
+        padding-bottom: 188px;
+        padding-top: 188px;
+    }
 
     .container.container-mini{
             max-width: 1200px;    
@@ -1423,7 +1520,8 @@ letter-spacing: 0.04em;
         font-size: 20px;
         line-height: 1.2;
             }
-    .advantages-blok-icon{
+            .advantages-blok-icon{
+                display: flex;
                 opacity: 1; 
                 padding: 24px 100px;  } 
     .work {
@@ -1438,6 +1536,11 @@ letter-spacing: 0.04em;
             width: 100%;
         align-content: center;
 
+        }
+        .command-list{
+            display: flex;
+            flex-wrap: nowrap;
+            gap:24px;
         }
         .command-item{
             width: calc((100%-72px) / 4);
