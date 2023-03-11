@@ -872,7 +872,7 @@ padding-top: 48px;
     align-items: center;
     gap: 24px;   
     margin-bottom: 48px;
-    justify-content: center;
+    
     
 } 
 
@@ -1028,14 +1028,14 @@ color: var(--main-text-color);
      display: block;
      margin-left: auto;
      margin-bottom: 24px;
+     align-items: baseline;
      }
 .modal-close-icon {
    width: 8px;
    height: 8px;
    fill:  #000000;
    align-items: center;
-   padding: auto;
-  
+   
     }
     .modal-close:is(:hover, :focus){
         background: #404BBF;
