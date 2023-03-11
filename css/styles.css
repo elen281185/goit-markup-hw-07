@@ -1118,6 +1118,8 @@ position: relative;
     padding: 8px 16px;
     resize: none;
     margin-bottom: 16px;
+    color: #8E8F99;
+    opacity: 0.5;
     
 }
 .modal-comment:focus{
